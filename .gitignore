@@ -1,0 +1,6 @@
+# Ignore macOS generated metadata
+**/.DS_Store
+# Ignore the Node.js modules
+node_modules
+# Ignore the environment config
+.env
