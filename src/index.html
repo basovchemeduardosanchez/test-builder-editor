@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>jQuizzy Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="lefty">
+
+        <h1>jQuizzy</h1>
+        <h2>Code Generator</h2>
+
+        <p id="int-toggle">
+            Howdy! Welcome to the code generator tool for jQuizzy. If you missed the quick walk through at the beginning, click me to get a quick reminder.
+        </p>
+
+        <ul id="int">
+            <li>Every field is editable -- <strong>double click</strong> to start editing.</li>
+            <li>Every question, and the options it holds, are rearrangeable. Just <strong>drag and drop</strong>.</li>
+            <li>The links at the <strong>top right</strong>corner should be self explanatory.</li>
+            <li><strong>Hover</strong> over an option and an x will pop up allowing you to delete it.</li>
+            <li>Click on the <strong>Add question</strong> button to add a question to the mix.</li>
+            <li>Finally, click on the <strong>big blue button</strong> below to get your code.</li>
+            <li>That's it! Let me know if you have any questions.</li>
+        </ul>
+
+        <br />
+        <a href="#" class="trigger" id="importer" data-modal-link="i">Import a quiz</a>
+        <br />
+
+
+        <a href="#" id="add" class="button">Add a question</a>
+        <br /><br /><br /><br />
+
+        <a href="#" id="view-code" class="trigger"  data-modal-link="o">View the code</a>
+        <br /><br />
+
+        <a href="#" id="let-there-be-light">Download</a>
+
+    </div>
+
+
+    <div id="fade"></div>
+    <div class="overlay" id="file-i">
+        <textarea id="input-file" class="m-text">Copy and paste the generated file here -- *not* the jQuizzy plugin</textarea>
+        <a href="#" id="imp-btn">Import</a>
+        <a href="#" class="close-m">Close</a>
+    </div>
+
+    <div class="overlay" id="file-o">
+        <p>Copy and paste this code into a new file and include it.</p><br />
+        <textarea id="output-file" class="m-text">Copy and paste the generated file here -- *not* the jQuizzy plugin</textarea>
+        <br /><a href="#" class="close-m">Close</a>
+    </div>
+
+
+    <div id="righty">
+        <ul id="sortable">
+            <li>
+                <div class="question-index"></div>
+                <div class="question-text jq-editable-textarea jqe" >Start here...</div>
+                <a class="toggle" href="#">Toggle</a>
+                <a class="delete" href="#">Delete</a>
+                <a href="#" class="add-option">Add an option</a>
+                <ul class="answers">
+                    <li class="selected">
+                        <div class="delete-answer">x</div>
+                        <span class="jq-editable jqe">This is editable and draggable too.</span>
+                    </li>
+                    <li>
+                        <div class="delete-answer">x</div>
+                        <span class="jq-editable jqe">Click once to select the right option.</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/edit.js"></script>
+<script src="js/guider.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/download.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
